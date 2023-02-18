@@ -1,0 +1,15 @@
+:root {
+    --body-bg: black;
+    --side-menu-bg: #29292E;
+    --side-menu-hover-color: #29292ebd;
+    --green-color: #38A37F;
+    --green-hover-color: #38a37ff0;
+    --red-color: #A33838;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}

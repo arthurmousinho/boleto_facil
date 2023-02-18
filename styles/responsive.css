@@ -1,0 +1,210 @@
+@media (max-width: 1000px) {
+    .side-section-container {
+        width: 15vw;
+    }
+
+    #logo {
+        display: none;
+    }
+    
+    .side-section-container .buttons-container .button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem 0.5rem; 
+    }
+
+    .buttons-container .button span {
+        display: none;
+        opacity: 0;
+    }
+
+    .buttons-container .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-section {
+        padding-left: 15vw;
+    }
+
+    .to-pay-panel h3, .payed-panel h3 {
+        font-size: 2.5rem;
+    }
+
+    .add-new-modal-overlay.active .modal, .ticket-options-modal-overlay.active .modal {
+        width: 80vw; 
+    }
+
+    .add-new-modal-overlay.active .modal div input {
+        width: 80%;
+        height: 40px;
+    }
+
+    .add-new-modal-overlay.active .modal button, .ticket-options-modal-overlay.active .modal button, 
+    .ticket-options-modal-overlay.active .modal #remove-ticket-button {
+        width: 80%;
+        height: 40px;
+    }
+    
+}
+
+@media (max-width: 630px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mobile-header {
+        text-align: right;
+        padding-left: 10px;
+        width: 100vw;
+    }
+
+    .mobile-header img {
+        width: 100px;
+    }
+
+    .mobile-header .mobile-menu {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100px;
+        background-color: var(--green-color);
+        color: white;
+        border-radius: 5px;
+        border-color: none;
+        border-width: 0px;
+        padding: 0.5rem;
+    }
+
+
+    .mobile-header .mobile-menu img {
+        width: 20px;
+    }
+
+    .side-section-container {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+        position: fixed;
+    }
+
+    .mobile-header {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+    }
+    
+
+    .main-section {
+        display: flex;
+        flex-direction: column;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        padding-left: 5px;
+        
+        
+        overflow-x: hidden;
+        padding: auto;
+    }
+
+    .main-section .panels-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .to-pay-panel, .payed-panel {
+        padding-right: 9px;
+        width: 50vw;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    thead tr th {
+        font-size: 12px;
+    }
+
+    tbody tr td img {
+        width: 15px;
+    }
+
+    .add-new-modal-overlay.active .modal, .ticket-options-modal-overlay.active .modal {
+        width: 100vw; 
+    }
+
+    .add-new-modal-overlay.active .modal div input,.ticket-options-modal-overlay.active .modal div input {
+        width: 80%;
+        height: 40px;
+    }
+
+    .ticket-options-modal-overlay.active .modal div select {
+        width: 80%;
+        height: 40px;
+    }
+
+    .add-new-modal-overlay.active .modal button, .ticket-options-modal-overlay.active .modal button {
+        width: 80%;
+        height: 40px;
+    }
+
+    
+}
+
+@media (max-width: 480px) {
+    .to-pay-panel h3, .payed-panel h3 {
+        font-size: 1.5rem;
+    }
+
+    tbody tr td {
+        font-size: 12px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .ticket-options-modal-overlay .modal h3 {
+        width: 300px;
+        text-align: center;
+        text-overflow: ellipsis;
+        white-space: nowrap; 
+        overflow: hidden; 
+    }
+}
+
+@media (max-width: 350px) {
+
+    .to-pay-panel, .payed-panel {
+        width: 50vw;
+        padding: 10px 0px;
+    }
+
+    .to-pay-panel h3, .payed-panel h3 {
+        font-size: 1rem;
+    }
+
+    .to-pay-panel p, .payed-panel p {
+        font-size: 12px;
+    }
+
+    thead tr th {
+        font-size: 10px;
+    }
+    tbody tr td {
+        font-size: 10px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    } 
+
+
+}

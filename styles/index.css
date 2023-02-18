@@ -1,0 +1,239 @@
+body {
+   background-color: var(--body-bg);
+
+   display: flex;
+   flex-direction: row;
+   overflow: auto;
+}
+
+.side-section-container {
+   background-color: var(--side-menu-bg);
+   width: 25vw;
+   height: 100vh;
+   padding-top: 50px;
+   
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 100px;
+
+   position: fixed;
+}
+
+.side-section-container #logo {
+   width: 200px;
+}
+
+.side-section-container .buttons-container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+}
+
+.side-section-container .buttons-container .button {
+   padding: 0.5rem 1rem;
+
+   max-width: 250px;
+   width: 90%;
+
+   cursor: pointer;
+   border-radius: 10px;
+   background-color: var(--green-color);
+   color: white;
+   font-size: 1rem;
+   text-decoration: none;
+
+   display: flex;
+   flex-direction: row;
+   justify-content: start;
+   align-items: center;
+   gap: 1rem;
+   box-sizing: content-box;
+   border: none;
+}
+
+.side-section-container .buttons-container .button:hover {
+   background-color: var(--green-hover-color);
+}
+
+.mobile-header {
+   display: none;
+   visibility: hidden;
+   opacity: 0;
+} 
+
+.mobile-header nav {
+   display: none;
+   visibility: hidden;
+   opacity: 0;
+}
+
+.mobile-header nav.on {
+   display: block;
+   visibility: visible;
+   opacity: 1;
+   padding-bottom: 2rem;
+
+   background-color:  black;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 2rem;
+   gap: 1rem;
+   top: 0;
+   left: 0;
+   z-index: 999px;
+}
+
+.mobile-header nav.on .button{
+   display: flex;
+   align-items: center;
+   vertical-align: middle;
+   gap: 10px;
+   background-color: var(--green-color);
+   text-decoration: none;
+   width: 300px;
+   color: white;
+   font-size: 1rem;
+   border-radius: 10px;
+   padding: 10px;
+}
+
+.mobile-header nav.on  .button img {
+   width: 30px;
+}
+
+
+.main-section {
+   width: 100vw;
+   height: 100vh;
+   padding-top: 50px;
+   padding-left: 25vw;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.main-section .panels-container {
+   width: 80%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   gap: 1rem;
+   align-items: center;
+}
+
+.to-pay-panel, .payed-panel{
+   background-color: var(--side-menu-bg);
+   width: 400px;
+   height: 120px;
+   border-radius: 10px;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+}
+
+.to-pay-panel p, .payed-panel p {
+   color: white;
+   font-size: 20px;
+}
+
+.to-pay-panel h3, .payed-panel h3 {
+   color: white;
+   font-size: 3.5rem;
+   font-weight: 700;
+}
+
+.to-pay-panel div, .payed-panel div {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 10px;
+}
+
+.to-pay-panel div p {
+   color: var(--red-color);
+}
+
+.to-pay-panel h3 {
+   color: var(--red-color);
+}
+
+.payed-panel div p {
+   color: var(--green-color);
+}
+
+.payed-panel h3 {
+   color: var(--green-color);
+}
+
+table {
+   margin-top: 40px;
+   width: 80%;
+   border-spacing: 0rem 0.5rem;
+   overflow-x: auto;
+}
+
+table thead {
+   background-color: var(--side-menu-bg);
+   height: 40px;
+}
+
+table thead tr th {
+   color: rgba(255, 255, 255, 0.475);
+   text-align: left;
+   padding-left: 1rem;
+}
+
+table thead tr th:first-child, 
+table tbody tr td:first-child{
+    border-radius: 10px 0 0 10px; 
+}
+
+table thead tr th:last-child, 
+table tbody tr td:last-child{
+    border-radius: 0 10px 10px 0;
+}
+
+tbody tr {
+   width: 100%;
+   height: 50px;
+   background-color: var(--side-menu-bg);
+}
+
+tbody tr:hover {
+   background-color: var(--side-menu-hover-color);
+}
+
+tbody tr td img {
+   cursor: pointer;
+}
+
+tbody tr td {
+   color: white;
+   text-align: left;
+   padding-left: 1rem;
+}
+
+.status.to-pay{
+   color: var(--red-color);
+}
+
+.status.payed {
+   color: var(--green-color);
+}
+
+::-webkit-scrollbar {
+   width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+   background-color: rgba(255, 255, 255, 0.623);
+   border-radius: 10px;
+}
