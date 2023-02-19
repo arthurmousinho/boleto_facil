@@ -2,7 +2,7 @@
 
 Aplicação web que ajuda os usuários a monitorar gastos, como boletos, faturas e contas em geral.
 
-![banner](./github/banner.png)
+![banner](./github/preview.png)
 
 ## 💡Funcionalides
 - Adicionar boletos e organiza-los em uma tabela
